@@ -2,12 +2,11 @@ const state = [
 	{
 		id: 1,
 		name: 'stage1-01',
-		answer: ['2012'],
-		message: 'Ищите коробку 2012 на балконе',
+		answer: ['2611'],
+		message: 'И так, начнем!',
 		hints: [
-			'Обратите внимание на цифры.',
-			'Просуммируйте все цифры.',
-			'А про двойку не забыли?'
+			'Код состоит из 4-х цифр',
+			'Какой сегодня день?'
 		]
 	},
 	{
@@ -272,7 +271,7 @@ const btnClose = document.querySelector('.foto-msg__close');
 const audio = new Audio();
 
 const HELP_TITLE = '<span class="help__title">Подсказка: </span><br>';
-const TIME_OUT = 120000;
+const TIME_OUT = 5000;
 
 //инициализация параметров
 function init() {
@@ -315,22 +314,17 @@ updateStages();
 function toggleRooms() {
 	const rooms = document.querySelectorAll('.room');
 	const stories = document.querySelectorAll('.last-story');
-	const separators = document.querySelectorAll('.separator');
 	if (localStorage.stateNum >= 10) {
 		rooms[1].classList.remove('hidden');
-		separators[1].classList.remove('hidden');
 	} else {
 		rooms[1].classList.add('hidden');
-		separators[1].classList.add('hidden');
 	}
 	if (localStorage.stateNum >= 25) {
 		stories[0].classList.remove('hidden');
 		rooms[2].classList.remove('hidden');
-		separators[2].classList.remove('hidden');
 	} else {
 		stories[0].classList.add('hidden');
-		rooms[2].classList.add('hidden');
-		separators[2].classList.add('hidden');
+		rooms[2].classList.add('hidden');;
 	}
 	if (localStorage.stateNum >= 32) {
 		stories[1].classList.remove('hidden');
