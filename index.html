@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/image/fav-icon.png" rel="shortcut icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap"
+			rel="stylesheet">
+		<link href="./src/style.css" rel="stylesheet">
+		<title>QUEST: secret of one room</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+		<div class="alert">
+			<p class="alert__msg">Неправильно! Подумай еще или воспользуйся подсказкой.</p>
+			<button class="btn btn_alert">Закрыть</button>
+		</div>
+		<div class="foto-msg">
+			<div class="foto-msg__close"></div>
+		</div>
+		<header class="header">
+			<div class="wrapper">
+				<ul class="nav">
+					<li class="logo"></li>
+					<li><a class="nav__link" href="#room-1">Комната 1</a></li>
+					<li><a class="nav__link" href="#room-2">Комната 2</a></li>
+					<li><a class="nav__link" href="#room-3">Комната 3</a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="main">
+			<!-- КОМНАТА 1 -->
+			<section id="room-1" class="room">
+				<div class="wrapper">
+					<h1>Комната 1</h1>
+					<!-- Задание 1 -->
+					<div class="stage">
+						<p class="story">
+							В 1890 году на этом месте при загадочных обстоятельствах был убит
+							мужчина. Когда через два года его нашли, то тело не смогли опознать.
+							Следствие зашло в тупик и дело и дело затерялось в архиве.<br>
+							Через 120 лет было принято решение снести здание архива.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти архив.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите числовой код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 2 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Молодой капитан, ранее работавший в детективном агенстве "А1", разбирая
+							дела, наткнулся на одно дело, где был написан код:<br>
+							<span class="help__title">8-6-19-20-16-12-16-6/21-2-10-11-19-20-3-16</span>
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Расшифровать код и найти дело.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Расшифруйте и введите название дела">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 3 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектива дело заинтересовало, ведь там была фотография очень знакомой
+							ему местности. Там когда-то жила его дальняя родственница, которая
+							рассказывала ему про то, как местные шептались про один дом "Домом
+							призраков", в котором по ночам были слышны крики.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти этот дом
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 4 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Находка детектива слегка удивила: - "Как эти предметы могут быть связаны
+							с убитым?!". Далее он огляделся вокруг и заметил лоскут точно такой же,
+							как и в деле.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Отгадайте загадку.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Ответ на загадку">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 5 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив заметил еще одну подозрительную коробку, цвета шмальта.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Найдите коробку и отгадайте загадку.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите ответ на загадку">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 6 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив посмотрел на один предмет и вдруг вспомнил, что с утра ничего не
+							ел.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Что это за предмет?
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 7 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Но он быстро забыл про голод, когда услышал голос...
+						</p>
+						<button class="btn btn_play">Голос</button>
+						<p class="story">
+							Детективу стало жутко и он решил покинуть странны дом, но дверь оказалась
+							запертой снаружи, а на телефон пришло сообщение с изображением...
+						</p>
+						<button class="btn btn_msg">Сообщение</button>
+						<p class="story">
+							Детектив понял, что ему не уйти без разгадки. Он разложил все предметы по
+							порядку и решил все сопоставить, чтобы понять, что к чему. Всё же чего-то
+							тут не хватает...<br>
+							Детектив задумался, но тут загремел гром и ярко сверкнула молния и он
+							нашел очень важный документ.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span> Найти документ
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите слово">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 8 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив осмотрелся еще раз, дабы не упустить ничего и услышал вдруг....<br>
+							Странные часы как будто вели куда-то. Там он нашел блокнот с записями
+							доктора.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Найти блокнот (ответ писать через тире)
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите шифр через тире">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 9 -->
+					<div class="stage">
+						<hr>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Изучить записи и разгадать каким врачом был убитый.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите профессию доктора">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+				</div>
+			</section>
+			<div class="separator">
+				<h2>Пока человек жив, самое страшное ждет его впереди.</h2>
+			</div>
+			<!-- КОМНАТА 2 -->
+			<section id="room-2" class="room">
+				<div class="wrapper">
+					<h1>Комната 2</h1>
+					<!-- Задание 1 -->
+					<div class="stage">
+						<p class="story">
+							В комнате было 4 человеческих тела. Комната наполнялась звуками,
+							напоминающими детективу рассказ о доме призраков. Эти звуки были похожи
+							на шепот мертвых душ, каждый хотел ему рассказать о чем-то... Когда
+							стало тихо, детектив заприметил большой ящик, запертый на замок.
+							Осталось найти ключ.
+						</p>
+						<video class="video" src="./assets/video/video.mp4" controls></video>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Посмотреть видео и отгадать о чем оно.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Что на видео?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 2 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив открыл ящик, в котором было 5 коробок с отверстиями. В каждой
+							коробке он по порядку находил предметы, самым противным это было
+							чувствовать то, что внутри коробки. Справедливости ради, детектив от
+							брезгливости менял руки. Доставая предметы, он обмывал их водой и
+							выкладывал в то же порядке. Сопоставил порядок найденных предметов в
+							первой комнате с найденными предметами во второй комнате и записи в
+							блокноте психиатра...
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Предмет №1
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="task">
+							<span class="task__title">Задание: </span>Предмет №2
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="task">
+							<span class="task__title">Задание: </span>Предмет №3
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="task">
+							<span class="task__title">Задание: </span>Предмет №4
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="task">
+							<span class="task__title">Задание: </span>Предмет №5
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 3 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив понял, что эти предметы относятся к каждому присутствующему тут
+							телу. Возле каждого тело было их изображение, которые оказались очень
+							важными подсказками. Всё вело к тому, что они были пациентами доктора:<br>
+							Первой пациенткой была Люси.<br>
+							Симптом: нервное заболевание, выражающееся в припадках, повышенной
+							раздражительности, судорожном смехе со слезами.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите болезнь">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 4 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив понял, что эти предметы относятся к каждому из присут
+							Доктор лечил ее своеобразным способом, через ....
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Каким способом?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 5 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Вторым пациентом был Майкл, на вид был умственно отсталым и с
+							диагнозом...
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Узнайте диагноз Майкла.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите болезнь">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 6 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Майкла он предпочитал лечить с помощью ...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="С помощью чего?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 7 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Третьим пациентом был Питер, у него была шизофрения и он представлял себя
+							...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Кем представлял?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 8 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Тут доктору пригодились молоток и гвозди, он Питера ...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Что сделал?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 9 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Четвертой была девушка по имени Бритни, она всегда считала себя толстой,
+							поэтому и заболела.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите болезнь">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 10 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							По телу Бритни было понятно от чего она умерла ...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="От чего?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 11 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Пятым пациентом был Антонио.<br>
+							Детектив ничего о нем не знал. Из всех найденных предметов осталось
+							только яйцо. Разломав его, детектив нашел загадочное послание ...
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Разгадать послание.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите слово">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<p class="story last-story">
+						Детектив понял, что Антонио и Люси были возлюбленными. Еще стало понятно,
+						как пациенты оказались вне стен больницы и почему этот дом называли
+						"Домом призраков". Доктор извращенным образом издевался над своими
+						пациентами, а они в свою очередь умирали в криках.<br>
+						Детектива не оставлял в покое один вопрос: "При чем тут яйцо?!". Было
+						ясно только то, что этот предмет как-то связан с Антонио, но как именно?
+						В комнате не было никаких подсказок. Детектив прислушался к своей
+						интуиции и последовал за ней.
+					</p>
+				</div>
+			</section>
+			<div class="separator">
+				<h2>Черепаха-клаустрофоб живёт в ужасе.</h2>
+			</div>
+			<!-- КОМНАТА 3 -->
+			<section id="room-3" class="room">
+				<div class="wrapper">
+					<h1>Комната 3</h1>
+					<!-- Задание 1 -->
+					<div class="stage">
+						<p class="story">
+							Детектив выходя из комнаты заметил странный свёрток, завернутый точно в
+							такой же лоскут, который встречал и ранее.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти свёрток
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите слово">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 2 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							То, что Антонио тоже был пациентом доктора, было понятно и ранее.
+							Детектив решил осмотреть место, где было найдено тело убитого доктора.
+							Перед выходом детектив заметил странный шифр, который ему помог.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Разгадать шифр
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Зашифрованное слово">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 3 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив чувствует, что вот-вот и он всё разгадает и чем ближе финал, тем
+							больше ему начинают мешать. Этот "чертов" лес и лучше поторопиться выйти
+							отсюда.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Разгадать послание "чертова" леса
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите ответ">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 4 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив внимательно прочитал все документы и заметил, что есть в них
+							какая-то загадка, которую надо разгадать.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Разгадать загадку
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите ответ">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 5 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив почувствовал чьё-то дыхание, кто-то дышал ему прямо в затылок,
+							"Ответ совсем рядом, нужно просто взглянуть ещё раз на трудовой лист
+							доктора Алана" - подумал мысленно детектив.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Сколько лет было доктору Алану?
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите ответ">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 6 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Детектив обратил внимание на тело странного человека, в шляпе которого
+							была разгадка...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите ответ">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<!-- Задание 7 -->
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Дело можно считать закрытым!? Ведь теперь стало понятно, что Антонио и
+							был тем самым доктором, который всех убивал, по личным мотивам подставляя
+							доктора.<br>
+							Но так и не стало понятным, чьё же тело было найдено следователями в
+							1890г. Поэтому детектив решился на отчаянный поступок, покопаться в
+							земле...
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Чье тело закопано?
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Чье тело?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<p class="story last-story">
+						Всё стало ясно: Алана убил Антонио. А где же сам Антонио? У детектива
+						осталась только одна тропинка, по которой он не ходил, и он отправился по
+						ней в поисках Антонио. И оказался на том же месте, где был в самом начале…
+					</p>
+				</div>
+			</section>
+			<div class="separator">
+				<h2>Лучше ужасный конец, чем ужас без конца.</h2>
+			</div>
+			<!-- КОМНАТА 1 -->
+			<section id="room-4" class="room">
+				<div class="wrapper">
+					<h1>Комната 1</h1>
+					<!-- Задание 8 -->
+					<div class="stage">
+						<p class="story">
+							Дом призраков тех, которые давно ищут покой. Детектив понял, почему
+							именно он должен был сюда попасть. Одна из жертв Антонио была его дальняя
+							родственница, она помогала ему в делах, теперь его очередь помочь им
+							покинуть этот дом, узнав их страшную участь.<br>
+							На стене висели часы, которые ему однажды уже помогли...
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите ответ">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="last-story">
+						<p class="story">
+							Тело Антонио было в гардеробе. Теперь детективу надо было сделать обряд и
+							освободить все души. Он нашел в коробке "1890" слезы умерших людей и
+							выпив
+							содержимое освободил все души…
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Всем выпить содержимое
+						</p>
+						<p class="story">
+							Дело можно считать закрытым?<br>
+							И все вокруг сказали "ДААААА!"
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<ul class="nav">
+					<li class="logo"></li>
+					<li><a class="nav__link" href="#room-1">Комната 1</a></li>
+					<li><a class="nav__link" href="#room-2">Комната 2</a></li>
+					<li><a class="nav__link" href="#room-3">Комната 3</a></li>
+				</ul>
+			</div>
+		</header>
+		<script src="./src/script.js"></script>
+	</body>
+
+</html>
