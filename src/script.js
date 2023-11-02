@@ -64,16 +64,14 @@ const state = [
 	}
 ];
 
+const HELP_TITLE = '<span class="help__title">Подсказка: </span><br>';
+const TIME_OUT = 5000;
+
 const stages = document.querySelectorAll('.stage');
 const alert = document.querySelector('.alert');
 const alertMsg = document.querySelector('.alert__msg');
 const overlay = document.querySelector('.overlay');
 const btnAlert = document.querySelector('.btn.btn_alert');
-
-const audio = new Audio();
-
-const HELP_TITLE = '<span class="help__title">Подсказка: </span><br>';
-const TIME_OUT = 5000;
 
 //инициализация параметров
 function init() {
@@ -200,12 +198,6 @@ document.querySelector('.logo').addEventListener('click', function () {
 btnAlert.addEventListener('click', toggleAlert);
 
 let isPlay = false;
-
-//проиграть аудио
-function playAudio() {
-	audio.src = '../assets/audio/voice.mp3';
-	isPlay ? audio.play() : audio.pause();
-}
 
 //переключения всплывающего сообщения
 function toggleFotoMsg() {
