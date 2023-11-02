@@ -89,6 +89,21 @@ hr {
   height: 80px;
 }
 
+.footer>.wrapper,
+.header>.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.logo {
+  background-image: url('../assets/image/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  cursor: pointer;
+}
+
 .overlay {
   position: fixed;
   left: 0;
@@ -213,13 +228,16 @@ section {
   font-family: var(--font-family-text-add);
   text-align: center;
   margin-top: 10px;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
+  color: orangered;
 }
 
 .task__title {
   color: var(--color-text);
   font-family: var(--font-family-text-add);
   letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .answer {

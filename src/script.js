@@ -6,46 +6,47 @@ const state = [
 		message: 'И так, начнем!',
 		hints: [
 			'Код состоит из 4-х цифр',
-			'Какой сегодня день?'
+			'Когда у тебя День рождения?'
 		]
 	},
 	{
 		id: 2,
 		name: 'stage1-02',
 		answer: ['ЖЕСТОКОЕ УБИЙСТВО'],
-		message: "Ищите дело с надписью 'Жестокое убийство'",
-		hints: ['Воспользуйтесь алфавитом.']
+		message: "Поторопись, пока злые волшебники еще не разошлись",
+		hints: ['В каком классе учится девочка?']
 	},
 	{
 		id: 3,
 		name: 'stage1-03',
 		answer: ['АВТО', 'АВТОМОБИЛЬ', 'МАШИНА'],
-		message: 'Без чего нельзя управлять автомобилем?.',
-		hints: []
+		message: 'Без чего нельзя управлять автомобилем?',
+		hints: ['На чем мы можем поехать за злыми волшебниками?']
 	},
 	{
 		id: 4,
 		name: 'stage1-04',
-		answer: ['ЭЛЕКТРИЧЕСТВО'],
-		message: 'Правильно, это ЭЛЕКТРИЧЕСТВО. Продолжайте искать предметы.',
-		hints: [
-			'Шмальта - это глазурь, приготовленная из кобальтовых руд....',
-			'...голубого или синего цвета.'
-		]
+		answer: ['АВТО', 'АВТОМОБИЛЬ', 'МАШИНА'],
+		message: 'Без чего нельзя управлять автомобилем?',
+		hints: ['На чем мы можем поехать за злыми волшебниками?']
 	},
 	{
 		id: 5,
 		name: 'stage1-05',
-		answer: ['ПАУТИНА'],
-		message: 'Правильно, это ПАУТИНА. Продолжайте искать предметы.',
-		hints: []
+		answer: ['ОВА269739', 'ОВА 269739', 'OBA269739', 'OBA 269739'],
+		message: 'Ну наконец-то! Торопись!',
+		hints: [
+			'Количество символов в коде соответсвует номеру класса, в котором учится Светка Стрекозина',
+			'А может в документах ты что-то можешь найти?',
+			'Каждый автомобиль, как и человек, имеет документ, удостоверяющий личность.'
+		]
 	},
 	{
 		id: 6,
 		name: 'stage1-06',
-		answer: ['ЛОЖКА'],
-		message: 'Правильно, это ЛОЖКА. Продолжайте искать предметы.',
-		hints: []
+		answer: ['250'],
+		message: 'Молодец, ты такая сообразительная!',
+		hints: ['На каком поезде можно добраться в Санкт-Петербург?']
 	},
 	{
 		id: 7,
@@ -60,201 +61,6 @@ const state = [
 		answer: ['1-10-19-28-37'],
 		message: "Все верно!",
 		hints: []
-	},
-	{
-		id: 9,
-		name: 'stage1-09',
-		answer: ['ПСИХИАТР', 'ПСИХИАТРОМ'],
-		message: "Теперь детективу стало все понятно: убитый был психиатром, но при чем тут найденные предметы оставалось не ясным. Дверь открылась, и детектив зашел во вторую комнату...",
-		hints: []
-	},
-	{
-		id: 10,
-		name: 'stage2-01',
-		answer: ['ПСИХИАТРИЧЕСКАЯ БОЛЬНИЦА', 'ПСИХБОЛЬНИЦА', 'ПСИХ. БОЛЬНИЦА', 'ПСИХ БОЛЬНИЦА', 'ПСИХУШКА'],
-		message: "Осторожно! Там под кроватью может быть кто-то.",
-		hints: []
-	},
-	{
-		id: 11,
-		name: 'stage2-02.1',
-		answer: ['ПЕРЧАТКИ', 'ПЕРЧАТКА'],
-		message: "Предмет №1 - это ПЕРЧАТКИ.",
-		hints: []
-	},
-	{
-		id: 12,
-		name: 'stage2-02.2',
-		answer: ['ОРЕХИ', 'ОРЕХ'],
-		message: "Предмет №2 - это ОРЕХ.",
-		hints: []
-	},
-	{
-		id: 13,
-		name: 'stage2-02.3',
-		answer: ['ПАУК'],
-		message: "Предмет №3 - это ПАУК.",
-		hints: []
-	},
-	{
-		id: 14,
-		name: 'stage2-02.4',
-		answer: ['ВИЛКА'],
-		message: "Предмет №4 - это ВИЛКА.",
-		hints: []
-	},
-	{
-		id: 15,
-		name: 'stage2-02.5',
-		answer: ['ЯЙЦО'],
-		message: "Предмет №5 - это ЯЙЦО.",
-		hints: []
-	},
-	{
-		id: 16,
-		name: 'stage2-03',
-		answer: ['ИСТЕРИЯ', 'ИСТЕРИЧКА', 'ИСТЕРИКА'],
-		message: "Все верно! Это ИСТЕРИЯ.",
-		hints: []
-	},
-	{
-		id: 17,
-		name: 'stage2-04',
-		answer: ['МАССАЖ МАТКИ', 'МАТКИ МАССАЖ', 'МАССАЖЕМ МАТКИ'],
-		message: "Все верно! Истерию доктор лечил через массаж матки.",
-		hints: []
-	},
-	{
-		id: 18,
-		name: 'stage2-05',
-		answer: ['ОЛИГОФРЕНИЯ', 'ОЛИГОФРЕН', 'ОЛИГОФРЕНИК'],
-		message: "Все верно! Это ОЛИГОФРЕНИЯ.",
-		hints: []
-	},
-	{
-		id: 19,
-		name: 'stage2-06',
-		answer: [
-			'ЭЛЕКТРИЧЕСКОГО СТУЛА',
-			'ЭЛЕКТРИЧЕСКИЙ СТУЛ',
-			'ЭЛЕКТРИЧЕСКИМ СТУЛОМ',
-			'ЭЛЕКТРОСТУЛА',
-			'ЭЛЕКТРОСТУЛ',
-			'ЭЛЕКТРОСТУЛОМ'
-		],
-		message: "Все верно! Олигофрению доктор лечил с помощью электрического стула.",
-		hints: []
-	},
-	{
-		id: 20,
-		name: 'stage2-07',
-		answer: [
-			'ЧЕЛОВЕК-ПАУК',
-			'ЧЕЛОВЕК ПАУК',
-			'ЧЕЛОВЕКОМ-ПАУКОМ',
-			'ЧЕЛОВЕКОМ ПАУКОМ'
-		],
-		message: "Все верно! Это ЧЕЛОВЕК-ПАУК.",
-		hints: [
-			'Сопоставить найденные предметы по №3',
-			'В первой комнате был найден молоток и гвозди, ответом на загадку была паутина, во второй комнате в коробке №3 был найден паук'
-		]
-	},
-	{
-		id: 21,
-		name: 'stage2-08',
-		answer: [
-			'ПРИБИЛ К ПОТОЛКУ',
-			'ПРИБИЛ ГВОЗДЯМИ К ПОТОЛКУ',
-			'ПРИБИЛ МОЛОТКОМ И ГВОЗДЯМИ К ПОТОЛКУ',
-			'ПРИБИЛ МОЛОТКОМ К ПОТОЛКУ'
-		],
-		message: "Все верно! Доктор прибил Питера к потолку.",
-		hints: []
-	},
-	{
-		id: 22,
-		name: 'stage2-09',
-		answer: ['АНОРЕКСИЯ', 'АНОРЕКСИЧКА', 'АНОРЕКСИК'],
-		message: "Все верно! Это АНОРЕКСИЯ.",
-		hints: ['Симптомы: потеря аппетита, дефицит массы тела']
-	},
-	{
-		id: 23,
-		name: 'stage2-10',
-		answer: [
-			'ОТ ОБЕЗВОЖИВАНИЯ',
-			'ОБЕЗВОЖИВАНИЯ',
-			'ОБЕЗВОЖИВАНИЕ',
-			'ОТ ОБЕЗВОЖИВАНИЯ ОРГАНИЗМА',
-			'ОБЕЗВОЖИВАНИЯ ОРГАНИЗМА',
-			'ОБЕЗВОЖИВАНИЕ ОРГАНИЗМА'
-		],
-		message: "Все верно! Это Бритни умерла от обезвоживания организма",
-		hints: []
-	},
-	{
-		id: 24,
-		name: 'stage2-11',
-		answer: ['ЛЮСИ'],
-		message: "Все верно! Это Люси",
-		hints: []
-	},
-	{
-		id: 25,
-		name: 'stage3-01',
-		answer: ['АНТОНИО'],
-		message: "Все верно!",
-		hints: []
-	},
-	{
-		id: 26,
-		name: 'stage3-02',
-		answer: ['СИМУЛЯНТ'],
-		message: "Все верно! Ищи птиц с посланиями.",
-		hints: []
-	},
-	{
-		id: 27,
-		name: 'stage3-03',
-		answer: ['ПОМОГИТЕ'],
-		message: "Все верно, ищите нужные бутылки.",
-		hints: []
-	},
-	{
-		id: 28,
-		name: 'stage3-04',
-		answer: ['1834'],
-		message: "Все верно, ищите второе яйцо.",
-		hints: []
-	},
-	{
-		id: 29,
-		name: 'stage3-05',
-		answer: ['56'],
-		message: "Все верно!",
-		hints: []
-	},
-	{
-		id: 30,
-		name: 'stage3-06',
-		answer: ['КОНЕЦ'],
-		message: "Все верно!",
-		hints: []
-	},
-	{
-		id: 31,
-		name: 'stage3-07',
-		answer: ['ДОКТОРА АЛАНА', 'ДОКТОР АЛАН', 'АЛАНА', 'АЛАН'],
-		message: "Все верно! Это тело доктора Алана.",
-		hints: []
-	},
-	{
-		id: 32,
-		name: 'stage3-08',
-		answer: ['29'],
-		message: "Все верно!",
-		hints: []
 	}
 ];
 
@@ -263,10 +69,6 @@ const alert = document.querySelector('.alert');
 const alertMsg = document.querySelector('.alert__msg');
 const overlay = document.querySelector('.overlay');
 const btnAlert = document.querySelector('.btn.btn_alert');
-const btnMsg = document.querySelector('.btn_msg');
-const btnPlay = document.querySelector('.btn_play');
-const fotoMsg = document.querySelector('.foto-msg');
-const btnClose = document.querySelector('.foto-msg__close');
 
 const audio = new Audio();
 
@@ -305,40 +107,9 @@ function updateStages() {
 	}
 	if (+localStorage.stateNum === state.length + 1) return;
 	stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = true;
-	toggleRooms();
 	setTimeout(() => stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = false, TIME_OUT);
 }
 updateStages();
-
-//Открываем новые блоки в секциях
-function toggleRooms() {
-	const rooms = document.querySelectorAll('.room');
-	const stories = document.querySelectorAll('.last-story');
-	if (localStorage.stateNum >= 10) {
-		rooms[1].classList.remove('hidden');
-	} else {
-		rooms[1].classList.add('hidden');
-	}
-	if (localStorage.stateNum >= 25) {
-		stories[0].classList.remove('hidden');
-		rooms[2].classList.remove('hidden');
-	} else {
-		stories[0].classList.add('hidden');
-		rooms[2].classList.add('hidden');;
-	}
-	if (localStorage.stateNum >= 32) {
-		stories[1].classList.remove('hidden');
-		rooms[3].classList.remove('hidden');
-	} else {
-		stories[1].classList.add('hidden');
-		rooms[3].classList.add('hidden');
-	}
-	if (localStorage.stateNum >= 33) {
-		stories[2].classList.remove('hidden');
-	} else {
-		stories[2].classList.add('hidden');
-	}
-}
 
 //создает подсказку в теге li
 function createHint(stateNum, hintNum) {
@@ -411,7 +182,6 @@ for (let stage of stages) {
 	stage.querySelector('.btn_answer').addEventListener('click', function () {
 		if (checkAnswer(stage)) {
 			changeState(stage);
-			toggleRooms();
 		} else {
 			generatorMessage('Неправильно! Подумай еще или воспользуйся подсказкой.');
 		};
@@ -437,18 +207,9 @@ function playAudio() {
 	isPlay ? audio.play() : audio.pause();
 }
 
-//запуск звука
-btnPlay.addEventListener('click', function () {
-	isPlay = !isPlay;
-	playAudio();
-});
-
 //переключения всплывающего сообщения
 function toggleFotoMsg() {
 	fotoMsg.classList.toggle('active');
 	overlay.classList.toggle('active');
 }
 
-//переключение сообщения с фотографией
-btnClose.addEventListener('click', toggleFotoMsg);
-btnMsg.addEventListener('click', toggleFotoMsg);
